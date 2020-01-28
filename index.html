@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Test</title>
+    </head>
+    <body>
+      <div ng-app="myApp">
+        <div ng-controller="ctrl">
+          <table border : 1px solid;>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+            <td ng-hide="value" ng-model="name">{{name}}</td> 
+            <td ng-hide="value" ng-model="age">{{age}}</td> 
+            <td ng-hide="value" ><button ng-click="Edit()">Edit</td>
+              <td ng-show="value" > <input type="text" ng-model="name"></td> 
+            <td ng-show="value"><input type="number" ng-model="age"></td> 
+             <td ng-show="value" ><button ng-click="Update(name,age)">Update</td>
+              
+            </tr>
+          </table>
+
+        </div>
+        </div>
+
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+
+        <script src="test.js"></script>
+      </body>
+</html>
